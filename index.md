@@ -1,13 +1,10 @@
 ---
-layout: github-style
+layout: page
+permalink: /
 title: Backend Partner Profile
+author_profile: true
+toc: false
 ---
-
-<div align="center" style="margin-bottom: 32px;">
-  <img src="assets/profile.png" alt="Cian Jeon" width="180" style="border-radius: 24px; border: 3px solid #e9eef6; box-shadow: 0 24px 48px -26px rgba(27,31,35,0.55);" />
-  <p style="margin: 18px 0 6px; font-size: 20px; font-weight: 600; color: #0b1f35;">백엔드 개발자 전시안 (Cian Jeon)</p>
-  <p style="margin: 0; color: #5b6572;">사용자 경험과 운영 안정화를 동시에 책임지는 백엔드 파트너</p>
-</div>
 
 # Backend Partner Profile
 

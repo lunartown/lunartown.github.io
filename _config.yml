@@ -1,9 +1,82 @@
-title: Cian Jeon · Backend Partner Profile
-markdown: GFM
+title: "Cian Jeon · Backend Partner"
+description: "사용자 경험과 운영 안정화를 책임지는 백엔드 개발자"
+lang: ko
+timezone: Asia/Seoul
+
+remote_theme: cotes2020/jekyll-theme-chirpy
+
+url: "https://lunartown.github.io"
+
+# Author info (used in avatar/profile block)
+author:
+  name: "전시안 (Cian Jeon)"
+  avatar: "/assets/profile.png"
+  bio: "사용자 경험과 운영 안정화를 동시에 책임지는 백엔드 개발자"
+  location: "Seoul, Korea"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/lunartown"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:cian@teamo2.kr"
+
+# Footer contact links
+contact:
+  - type: github
+    url: https://github.com/lunartown
+  - type: email
+    url: mailto:cian@teamo2.kr
+
+# Theme options
+paginate: 10
+paginate_path: /page:num
+show_category_counts: false
+show_theme_credit: false
+display_posts_on_home: false
+
+# Plugins recommended by Chirpy
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-archives
+
+collections:
+  tabs:
+    output: true
 
 defaults:
   - scope:
       path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "tabs"
+    values:
+      layout: page
+  - scope:
+      path: ""
       type: "pages"
     values:
-      layout: github-style
+      layout: page
+      author_profile: true
+      toc: false
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+gems:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-archives
+
+# Social preview image
+assets:
+  image: "/assets/profile.png"

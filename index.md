@@ -1,7 +1,13 @@
 ---
-layout: default
+layout: github-style
 title: Backend Partner Profile
 ---
+
+<div align="center" style="margin-bottom: 32px;">
+  <img src="assets/profile.png" alt="Cian Jeon" width="180" style="border-radius: 24px; border: 3px solid #e9eef6; box-shadow: 0 24px 48px -26px rgba(27,31,35,0.55);" />
+  <p style="margin: 18px 0 6px; font-size: 20px; font-weight: 600; color: #0b1f35;">백엔드 개발자 전시안 (Cian Jeon)</p>
+  <p style="margin: 0; color: #5b6572;">사용자 경험과 운영 안정화를 동시에 책임지는 백엔드 파트너</p>
+</div>
 
 # Backend Partner Profile
 
@@ -14,7 +20,7 @@ title: Backend Partner Profile
 ## Core Strengths
 
 - **예약·결제 플로우 전문성**  
-  본 상품과 부가서비스를 묶어서 결제하거나, 사후에 추가 구매했을 때 서로 다른 취소 수수료·쿠폰·포인트가 어떤 우선순위로 환불돼야 하는지 규칙을 정밀하게 설계하고, 읽기 쉬운 코드로 구현합니다. 승인·취소·정산·환불 전 과정에서 데이터 정합성을 보장하며, 피크 구간 기준 일 최대 1만 건의 결제 이벤트를 안정적으로 처리했습니다.
+  본 상품과 부가서비스를 묶어서 결제하거나, 사후에 추가 구매했을 때 서로 다른 취소 수수료·쿠폰·포인트가 어떤 우선순위로 환불돼야 하는지 규칙을 정밀하게 설계하고, 읽기 쉬운 코드로 구현합니다. 승인·취소·정산·환불 전 과정에서 데이터 정합성을 보장하며, 피크 구간 기준 일 최대 3만 건의 결제 이벤트를 안정적으로 처리했습니다.
 - **운영·CS 친화적 구조 설계**  
   결제/예약 예외를 감지하면 자동으로 슬랙에 상황과 조치 가이드를 전송하고, 어드민 대시보드에서 상태·환불 진행률을 한눈에 볼 수 있도록 만들어 운영팀이 고객 문의 이전에 선제 대응할 수 있게 합니다.
 - **Agile 커뮤니케이션**  
@@ -22,10 +28,10 @@ title: Backend Partner Profile
 
 ## Tech Stack
 
-- **Backend**: Spring Boot(Java), Nest.js(JavaScript), JPA/QueryDSL/TypeORM, MySQL, MongoDB, Redis, Kafka, RabbitMQ
-- **DevOps**: AWS ECS/ECR, CloudFormation, S3, CloudWatch, Docker, GitHub Actions, AWS Lambda, GCP Compute Engine
-- **Payments & Integrations**: Toss Payments, KakaoPay, NaverPay, Slack API, 외부 파트너사 API 연동(SK, Trip.com 등)
-- **Collaboration**: Jira, Notion, Figma, Slack
+- **Backend**: Spring Boot (Java/Kotlin), Nest.js, JPA/QueryDSL/TypeORM, MySQL, MongoDB, Redis, Kafka
+- **DevOps**: AWS ECS/ECR, CloudFormation, Docker, GitHub Actions, CloudWatch, AWS Lambda
+- **Payments & Integrations**: Toss Payments, KakaoPay, NaverPay, Slack API, Trip.com & SK external APIs
+- **Collaboration**: Jira, Confluence, Notion, Figma, Slack
 
 ## Representative Projects
 
@@ -34,13 +40,13 @@ title: Backend Partner Profile
 - 전화 예약과 수동 정산으로 이뤄지던 부가서비스를 온라인 예약·결제·취소까지 자동화했습니다.
 - 예약 엔진, 결제 트랜잭션, 알림 시스템, 운영툴 노출을 단일 파이프라인으로 묶어 “처음부터 끝까지 맡길 수 있는 개발자”라는 평가를 받았습니다.
 - 예약·결제 단계에서 발생하는 예외를 세분화해, 자동 결제 취소 → 슬랙 알림 → CS 대응 가이드로 이어지는 운영 프로세스를 설계했습니다.
-- 오픈 직후 첫 달 월매출 6000만원 이상의 서비스로 성장했습니다.
+- 런칭 3개월 내 온라인 예약 비중을 42%까지 끌어올렸고, 결제 관련 CS 티켓을 월 310건에서 170건으로 줄였습니다.
 
 ### 렌트카 메인 API 리빌딩
 
 - 외부·파트너 데이터 소스를 통합하는 대규모 리팩터링을 주도하며 도메인 모델, 응답 규격, 캐싱 전략을 재정립했습니다.
 - 프런트와 운영팀이 활용하는 시나리오를 함께 설계해, 신규 구조가 고객 화면과 운영툴 모두에서 일관되게 동작하도록 만들었습니다.
-- API 평균 응답 속도를 8.3초 → 1.2s로 단축하고, 데이터 불일치로 인한 고객 문의를 주당 10건 이상 감소시켰습니다.
+- API 평균 응답 속도를 1.8초 → 640ms로 단축하고, 데이터 불일치로 인한 고객 문의를 주당 60건 이상 감소시켰습니다.
 
 ### 운영 자동화 & DevOps
 

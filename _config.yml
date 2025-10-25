@@ -1,1 +1,9 @@
-theme: jekyll-theme-cayman
+title: Cian Jeon · Backend Partner Profile
+markdown: GFM
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: github-style
